@@ -59,6 +59,19 @@ section{display:flex;flex-direction:column;gap:18px}
 .promise{display:flex;flex-wrap:wrap;gap:8px}
 .promise span{background:var(--chip);border-radius:999px;padding:6px 12px;font-weight:500}
 .contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.trailer{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;border-radius:12px;overflow:hidden;cursor:pointer;background:#1A1411}
+.trailer img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.trailer:hover img{transform:scale(1.04)}
+.trailer::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,12,8,.55),transparent 55%)}
+.play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:rgba(255,246,228,.92);color:#2B1D14;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.play svg{margin-left:3px}
+.tlabel{position:absolute;z-index:1;left:12px;bottom:9px;font:700 .78rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:#FFF4E2}
+.trailer:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+dialog.viewer{border:0;padding:0;background:transparent;max-width:min(96vw,1100px);max-height:92vh;overflow:visible}
+dialog.viewer::backdrop{background:rgba(12,8,6,.86)}
+dialog.viewer video{display:block;max-width:min(96vw,1100px);max-height:86vh;border-radius:12px;background:#000}
+.vclose{position:absolute;top:-44px;right:0;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,246,228,.92);color:#2B1D14;font:700 1.3rem/1 var(--body);cursor:pointer}
+.vnote{color:#EFE6D4;font-size:.9rem;margin-top:8px;text-align:center}
 footer{color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 </style>
 </head>
@@ -79,31 +92,36 @@ footer{color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);padd
     <h2 id="g">The games</h2>
     <div class="games">
       <article class="game">
+        <button class="trailer" type="button" data-video="trailers/alii.mp4" aria-label="Watch the Aliʻi: Rise of a Chief trailer"><img src="trailers/alii.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="tlabel">Trailer</span></button>
         <div class="ghead"><img class="gicon" src="img/alii.webp" alt="" width="64" height="64"><div><h3>Aliʻi: Rise of a Chief</h3><div class="genre">Strategy · old Hawaiʻi</div></div></div>
         <p>Lead a district, win allies through marriage and gifts, command painted battles and unite the islands. A full reign takes about an hour.</p>
         <span class="status">In testing on Google Play</span>
         <div class="links"><a href="https://leftymacciano.itch.io/alii">Play in your browser</a><a href="https://leftym.github.io/aalii-privacy/support.html">Support</a><a href="https://leftym.github.io/aalii-privacy/">Privacy</a></div>
       </article>
       <article class="game">
-        <div class="ghead"><div class="gmono" style="background:#4E6B2E" aria-hidden="true">U</div><div><h3>Up the Village</h3><div class="genre">Football · village comedy</div></div></div>
+        <button class="trailer" type="button" data-video="trailers/up-the-village.mp4" aria-label="Watch the Up the Village trailer"><img src="trailers/up-the-village.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="tlabel">Trailer</span></button>
+        <div class="ghead"><img class="gicon" src="img/up-the-village.webp" alt="" width="64" height="64"><div><h3>Up the Village</h3><div class="genre">Football · village comedy</div></div></div>
         <p>Take a muddy English village team up the leagues, and keep the village’s heart while the money and the strangers arrive.</p>
         <span class="status">In testing on Google Play</span>
         <div class="links"><a href="up-the-village/privacy.html">Privacy</a></div>
       </article>
       <article class="game">
-        <div class="ghead"><div class="gmono" style="background:#B4532A" aria-hidden="true">F</div><div><h3>From the Block</h3><div class="genre">Basketball · career story</div></div></div>
+        <button class="trailer" type="button" data-video="trailers/from-the-block.mp4" data-silent aria-label="Watch the From the Block trailer"><img src="trailers/from-the-block.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="tlabel">Trailer</span></button>
+        <div class="ghead"><img class="gicon" src="img/from-the-block.webp" alt="" width="64" height="64"><div><h3>From the Block</h3><div class="genre">Basketball · career story</div></div></div>
         <p>A sixteen-year-old point guard from a small New Belgrade club, and the road from the neighborhood court to college ball.</p>
         <span class="status">Coming soon</span>
         <div class="links"><a href="from-the-block/privacy.html">Privacy</a></div>
       </article>
       <article class="game">
-        <div class="ghead"><div class="gmono" style="background:#2F5A73" aria-hidden="true">O</div><div><h3>Od Sela do Vrha</h3><div class="genre">Football · club owner</div></div></div>
+        <button class="trailer" type="button" data-video="trailers/od-sela-do-vrha.mp4" aria-label="Watch the Od Sela do Vrha trailer"><img src="trailers/od-sela-do-vrha.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="tlabel">Trailer</span></button>
+        <div class="ghead"><img class="gicon" src="img/od-sela-do-vrha.webp" alt="" width="64" height="64"><div><h3>Od Sela do Vrha</h3><div class="genre">Football · club owner</div></div></div>
         <p>From a village pitch to the top: build the squad, the stadium and the community around a small club in the Balkans.</p>
         <span class="status">Coming soon</span>
         <div class="links"><a href="od-sela-do-vrha/privacy.html">Privacy</a></div>
       </article>
       <article class="game">
-        <div class="ghead"><div class="gmono" style="background:#7A4A2A" aria-hidden="true">H</div><div><h3>Huakaʻi</h3><div class="genre">Story adventure · ancient Hawaiʻi</div></div></div>
+        <button class="trailer" type="button" data-video="trailers/huakai.mp4" aria-label="Watch the Huakaʻi trailer"><img src="trailers/huakai.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span><span class="tlabel">Trailer</span></button>
+        <div class="ghead"><img class="gicon" src="img/huakai.webp" alt="" width="64" height="64"><div><h3>Huakaʻi</h3><div class="genre">Story adventure · ancient Hawaiʻi</div></div></div>
         <p>A child arrives on Oʻahu by voyaging canoe and, over twenty years, grows into the one four villages trust to speak for them.</p>
         <span class="status">In development</span>
         <div class="links"><a href="huakai/privacy.html">Privacy</a></div>
@@ -113,11 +131,29 @@ footer{color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);padd
 
   <section class="contact" aria-labelledby="c">
     <h2 id="c" style="font-size:1.5rem">Say hello</h2>
-    <p>Questions, bug reports and ideas are all welcome. I read every message: <a href="mailto:dukaduka1@gmail.com">dukaduka1@gmail.com</a></p>
+    <p>Questions, bug reports and ideas are all welcome. I read every message: <a href="mailto:hello@duralek.games">hello@duralek.games</a></p>
   </section>
 
   <footer><span>© <span id="yr">2026</span> Duralek</span><span>Made in Hawaiʻi</span></footer>
 </main>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<dialog class="viewer" id="viewer" aria-label="Trailer">
+  <button class="vclose" type="button" aria-label="Close trailer">×</button>
+  <video id="vplayer" controls playsinline preload="none"></video>
+  <p class="vnote" id="vnote" hidden>This trailer has no sound.</p>
+</dialog>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  var d=document.getElementById('viewer'),v=document.getElementById('vplayer'),note=document.getElementById('vnote'),last=null;
+  function close(){v.pause();v.removeAttribute('src');v.load();if(d.open)d.close();if(last)last.focus()}
+  document.querySelectorAll('.trailer').forEach(function(b){b.addEventListener('click',function(){
+    last=b;v.src=b.dataset.video;v.poster=b.querySelector('img').src;note.hidden=!('silent' in b.dataset);
+    if(d.showModal)d.showModal();else d.setAttribute('open','');var p=v.play();if(p&&p.catch)p.catch(function(){});})});
+  d.querySelector('.vclose').addEventListener('click',close);
+  d.addEventListener('click',function(e){if(e.target===d)close()});
+  d.addEventListener('cancel',function(e){e.preventDefault();close()});
+  v.addEventListener('ended',function(){v.currentTime=0});
+})();
+</script>
 </body>
 </html>

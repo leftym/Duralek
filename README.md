@@ -9,3 +9,10 @@ The studio site for Duralek Games at https://duralek.games, served with GitHub P
   - `duralek-logo-horizontal.png` (transparent), `duralek-logo-stacked-cream.png`, `duralek-logo-stacked-dark.png`
 
 The painted art was made with generative tools (Higgsfield).
+
+## Trailers
+
+`trailers/<game>.mp4` (+ a `.jpg` poster) are short muted-start trailers cut from each game's own intro or art, made by
+`tools/trailers.py` (ffmpeg) from the game repos. They open in a player when a card's trailer is tapped.
+
+Contact for everything: hello@duralek.games (Cloudflare Email Routing).

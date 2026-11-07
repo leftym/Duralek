@@ -75,7 +75,7 @@ def page(slug, title, updated, sections, lang_note=""):
     os.makedirs(os.path.join(ROOT, slug), exist_ok=True)
     with open(os.path.join(ROOT, slug, "privacy.html"), "w") as f: f.write(doc)
 
-EMAIL = "dukaduka1@gmail.com"
+EMAIL = "hello@duralek.games"
 
 # Up the Village: the policy from the game's own repo (docs/privacy.html), unchanged in substance.
 page("up-the-village", "Up the Village", "November 2026", [("en", "en", [
