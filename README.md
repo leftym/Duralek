@@ -1,6 +1,6 @@
 # Duralek
 
-The studio site for Duralek Games, served with GitHub Pages from `main` (root).
+The studio site for Duralek Games at https://duralek.games, served with GitHub Pages from `main` (root). The `CNAME` file holds the custom domain.
 
 - `index.html`: the whole site (fonts in `fonts/`, Alegreya under the SIL Open Font License; images in `img/`).
 - `brand/`: logo files and the Google Play developer page images:

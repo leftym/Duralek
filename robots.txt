@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://duralek.games/sitemap.xml
