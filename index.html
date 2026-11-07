@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Duralek Games</title>
+<meta name="description" content="Duralek is a small independent game studio in Hawaiʻi, named for my late father’s company. Strategy, sports and story games, made with care.">
+<meta property="og:title" content="Duralek Games">
+<meta property="og:description" content="An independent game studio in Hawaiʻi. Strategy, sports and story games, made with care.">
+<meta property="og:image" content="img/header.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+/* Layout: a painted sunrise band, then one reading column of the studio's story and its games. */
+@font-face{font-family:"Alegreya";font-weight:700;font-display:swap;src:url(fonts/alegreya-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya";font-weight:800;font-display:swap;src:url(fonts/alegreya-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(fonts/alegreya-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(fonts/alegreya-sans-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF}
+@font-face{font-family:"Alegreya Sans";font-weight:500;font-display:swap;src:url(fonts/alegreya-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:700;font-display:swap;src:url(fonts/alegreya-sans-latin-700-normal.woff2) format("woff2")}
+:root{
+  --paper:#EFE7D4;--surface:#F7F1E3;--ink:#2B1D14;--muted:#6B5A4A;--line:rgba(43,29,20,.16);--accent:#A4561E;--gold:#A87A1E;--chip:#E6DAC0;
+  --display:"Alegreya",Georgia,"Times New Roman",serif;--body:"Alegreya Sans","Gill Sans","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1A1411;--surface:#241C17;--ink:#EFE6D4;--muted:#B5A48E;--line:rgba(239,230,212,.15);--accent:#E0965A;--gold:#D9A94A;--chip:#30251E;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1A1411;--surface:#241C17;--ink:#EFE6D4;--muted:#B5A48E;--line:rgba(239,230,212,.15);--accent:#E0965A;--gold:#D9A94A;--chip:#30251E;color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.08rem/1.6 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.hero{position:relative;aspect-ratio:16/7;min-height:220px;max-height:62vh;width:100%;background:#E8A363 url(img/header.jpg) 38% 30%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(to bottom,transparent,var(--paper))}
+.hero h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+main{max-width:720px;margin:0 auto;padding:8px max(16px,env(safe-area-inset-left,0px)) 72px;display:flex;flex-direction:column;gap:48px}
+.intro{display:flex;flex-direction:column;gap:14px}
+.eyebrow{font:700 .82rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h2{font:800 clamp(1.7rem,4.6vw,2.3rem)/1.12 var(--display);margin:0;text-wrap:balance}
+h3{font:700 1.3rem/1.2 var(--display);margin:0}
+p{margin:0}
+.lede{font-size:1.2rem;color:var(--ink)}
+.story{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:18px}
+.games{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:620px){.games{grid-template-columns:1fr 1fr}}
+.game{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.ghead{display:flex;gap:14px;align-items:center}
+.gicon{width:64px;height:64px;border-radius:14px;flex:none;object-fit:cover;background:var(--chip)}
+.gmono{width:64px;height:64px;border-radius:14px;flex:none;display:grid;place-items:center;font:800 1.7rem/1 var(--display);color:#FFF4E2}
+.genre{font-size:.92rem;color:var(--muted)}
+.status{align-self:flex-start;font:700 .78rem/1 var(--body);letter-spacing:.06em;text-transform:uppercase;background:var(--chip);color:var(--ink);padding:6px 10px;border-radius:999px}
+.links{display:flex;flex-wrap:wrap;gap:6px 16px;font-weight:500}
+.promise{display:flex;flex-wrap:wrap;gap:8px}
+.promise span{background:var(--chip);border-radius:999px;padding:6px 12px;font-weight:500}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+footer{color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+</style>
+</head>
+<body>
+<header class="hero" role="img" aria-label="Duralek Games: a sail-shaped D over a sunrise at sea">
+  <h1>Duralek Games</h1>
+</header>
+<main>
+  <section class="intro">
+    <span class="eyebrow">An independent studio in Hawaiʻi</span>
+    <h2>Games made with care</h2>
+    <p class="lede">Duralek is a small game studio. I make the kinds of games I love to play: strategy, sports and story games with a real sense of place.</p>
+    <p class="story">The name comes from my father. A long time ago, on the other side of the world, he started a company called Duralek. I carry the name on in his honor, and every game I make goes out under it.</p>
+    <div class="promise" aria-label="What every game promises"><span>No ads</span><span>No tracking</span><span>Plays offline</span></div>
+  </section>
+
+  <section aria-labelledby="g">
+    <h2 id="g">The games</h2>
+    <div class="games">
+      <article class="game">
+        <div class="ghead"><img class="gicon" src="img/alii.webp" alt="" width="64" height="64"><div><h3>Aliʻi: Rise of a Chief</h3><div class="genre">Strategy · old Hawaiʻi</div></div></div>
+        <p>Lead a district, win allies through marriage and gifts, command painted battles and unite the islands. A full reign takes about an hour.</p>
+        <span class="status">In testing on Google Play</span>
+        <div class="links"><a href="https://leftymacciano.itch.io/alii">Play in your browser</a><a href="https://leftym.github.io/aalii-privacy/support.html">Support</a><a href="https://leftym.github.io/aalii-privacy/">Privacy</a></div>
+      </article>
+      <article class="game">
+        <div class="ghead"><div class="gmono" style="background:#4E6B2E" aria-hidden="true">U</div><div><h3>Up the Village</h3><div class="genre">Football · village comedy</div></div></div>
+        <p>Take a muddy English village team up the leagues, and keep the village’s heart while the money and the strangers arrive.</p>
+        <span class="status">In testing on Google Play</span>
+      </article>
+      <article class="game">
+        <div class="ghead"><div class="gmono" style="background:#B4532A" aria-hidden="true">F</div><div><h3>From the Block</h3><div class="genre">Basketball · career story</div></div></div>
+        <p>A sixteen-year-old point guard from a small New Belgrade club, and the road from the neighborhood court to college ball.</p>
+        <span class="status">Coming soon</span>
+      </article>
+      <article class="game">
+        <div class="ghead"><div class="gmono" style="background:#2F5A73" aria-hidden="true">O</div><div><h3>Od Sela do Vrha</h3><div class="genre">Football · club owner</div></div></div>
+        <p>From a village pitch to the top: build the squad, the stadium and the community around a small club in the Balkans.</p>
+        <span class="status">Coming soon</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="c">
+    <h2 id="c" style="font-size:1.5rem">Say hello</h2>
+    <p>Questions, bug reports and ideas are all welcome. I read every message: <a href="mailto:dukaduka1@gmail.com">dukaduka1@gmail.com</a></p>
+  </section>
+
+  <footer><span>© <span id="yr">2026</span> Duralek</span><span>Made in Hawaiʻi</span></footer>
+</main>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
