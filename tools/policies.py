@@ -96,15 +96,15 @@ f"Questions about this policy: {EMAIL}",
 ])])
 
 # From the Block: the policy from the game's own repo (PRIVACY.md), English and Serbian.
-page("from-the-block", "From the Block", "October 2026", [
+page("from-the-block", "From the Block", "November 2026", [
 ("en", "en", [
-"From the Block is a single-player basketball career game made by an independent developer.",
-"- **The app collects no personal data.** It has no accounts, no analytics, no advertising, no tracking and no in-app purchases.\n- **The app has no internet permission.** It cannot send anything off your phone. The game, its pictures and its fonts are all inside the app.\n- **Your career is saved only on your device**, in the app's local storage. If you uninstall the app or clear its data, the save is deleted. Use the backup code in the game's settings to keep a copy yourself.\n- **The backup code** is text that you copy yourself. The app never sends it anywhere.\n- **Children.** The game is meant for players aged 13 and over.\n- **Changes.** If this ever changes, this page will be updated before a new version is released.",
+'From the Block is a single-player basketball career game made by an individual developer.',
+"- **The app collects no personal data.** It has no accounts, no analytics, no advertising, no tracking and no in-app purchases.\n- **The game never connects to the internet.** Nothing is sent off your phone by the game. The game, its pictures and its fonts are all inside the app.\n- **Your career is saved on your device**, in the app's storage. If your phone backup is turned on (for example Google or iCloud), it may keep a copy too, and we never see it. If you uninstall the app, the save is removed from the device, but a phone backup may bring it back. Use the backup code in the game's settings to keep a copy yourself.\n- **The backup code** is text that you copy yourself. The app never sends it anywhere. If you share your backup code, it goes where you send it.\n- **Children.** The game is meant for players aged 13 and over.\n- **Changes.** If this ever changes, this page will be updated before a new version is released.",
 f"Contact: {EMAIL}"]),
 ("sr", "sr", [
 "## Srpski",
-"Iz bloka (From the Block) je košarkaška igra za jednog igrača koju pravi nezavisni developer.",
-"- **Aplikacija ne prikuplja lične podatke.** Nema naloga, analitike, reklama, praćenja ni kupovine u aplikaciji.\n- **Aplikacija nema dozvolu za internet.** Ništa ne može da pošalje sa tvog telefona. Igra, slike i fontovi su u samoj aplikaciji.\n- **Tvoja karijera se čuva samo na tvom uređaju**, u lokalnoj memoriji aplikacije. Ako obrišeš aplikaciju ili njene podatke, sačuvana igra nestaje. Backup kod iz podešavanja igre služi da sam sačuvaš kopiju.\n- **Backup kod** je tekst koji sam kopiraš. Aplikacija ga nikad nigde ne šalje.\n- **Deca.** Igra je namenjena igračima od 13 godina.\n- **Izmene.** Ako se nešto promeni, ova stranica će biti ažurirana pre izlaska nove verzije.",
+'Iz bloka (From the Block) je košarkaška igra za jednog igrača koju pravi nezavisni developer.',
+'- **Aplikacija ne prikuplja lične podatke.** Nema naloga, analitike, reklama, praćenja ni kupovine u aplikaciji.\n- **Igra nikada ne izlazi na internet.** Igra ništa ne šalje sa tvog telefona. Igra, slike i fontovi su u samoj aplikaciji.\n- **Tvoja karijera se čuva na tvom uređaju**, u memoriji aplikacije. Ako na telefonu imaš uključenu rezervnu kopiju (na primer Google ili iCloud), karijera se možda čuva i u njoj. Mi to nikada ne vidimo. Ako deinstaliraš aplikaciju, sačuvana igra se uklanja sa uređaja, ali je može vratiti rezervna kopija telefona. Backup kod iz podešavanja igre služi da sam sačuvaš svoju kopiju.\n- **Backup kod** je tekst koji sam kopiraš. Aplikacija ga nikad nigde ne šalje. Ako podeliš svoj backup kod, on odlazi tamo gde ga pošalješ.\n- **Deca.** Igra je namenjena igračima od 13 godina.\n- **Izmene.** Ako se nešto promeni, ova stranica će biti ažurirana pre izlaska nove verzije.',
 f"Kontakt: {EMAIL}"])])
 
 # Od Sela do Vrha: the policy from the game's own repo (PRIVACY.md), English and Serbian.
