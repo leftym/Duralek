@@ -108,11 +108,11 @@ f"Contact: {EMAIL}"]),
 f"Kontakt: {EMAIL}"])])
 
 # Od Sela do Vrha: the policy from the game's own repo (PRIVACY.md), English and Serbian.
-page("od-sela-do-vrha", "Od Sela do Vrha", "28 October 2026", [
+page("od-sela-do-vrha", "Od Sela do Vrha", "19 November 2026", [
 ("en", "en", [
 "Od Sela do Vrha is a single-player football club owner game. It is made by an independent developer.",
 "**What the app collects: nothing.**",
-"- The game itself sends nothing anywhere. There are no accounts, no ads, no analytics and no tracking.\n- **Supporting the developer.** The whole game is free. In the menu you can choose to support the developer with an optional purchase; it gives no advantage in the game. The purchase is handled entirely by Google Play through Google's Play Billing library, under Google's own privacy policy. The app only asks Google Play whether this Google account has supported the game. It never sees your payment details.\n- Your careers, settings and achievements are saved only on your own phone, in the app's private storage (and in your phone's own Android backup, if you have that turned on). Uninstalling the app or clearing its data deletes them.\n- The \"copy save code\" feature creates a text code that you can copy yourself. The app never sends it anywhere.\n- The app may use the phone's vibration for game feedback. You can turn it off in Options.",
+"- The game itself sends nothing anywhere. There are no accounts, no ads, no analytics and no tracking.\n- Your careers, settings and achievements are saved only on your own phone, in the app's private storage (and in your phone's own Android backup, if you have that turned on). Uninstalling the app or clearing its data deletes them.\n- The \"copy save code\" feature creates a text code that you can copy yourself. The app never sends it anywhere.\n- The app may use the phone's vibration for game feedback. You can turn it off in Options.",
 "**Children.** The game is not directed at children under 13 and does not knowingly collect any information from anyone.",
 "**Changes.** If this ever changes, this page will be updated before the new version is released.",
 f"**Contact.** {EMAIL}"]),
@@ -120,7 +120,7 @@ f"**Contact.** {EMAIL}"]),
 "## Srpski",
 "Od Sela do Vrha je igra za jednog igrača o vlasniku fudbalskog kluba. Pravi je nezavisni autor.",
 "**Šta aplikacija prikuplja: ništa.**",
-"- Igra sama nigde ništa ne šalje. Nema naloga, reklama, analitike ni praćenja.\n- **Podrška autoru.** Cela igra je besplatna. U meniju možeš, ako želiš, da podržiš autora kupovinom koja ne daje nikakvu prednost u igri. Kupovinu u celosti obavlja Google Play preko Google-ove biblioteke Play Billing, po Google-ovoj politici privatnosti. Aplikacija samo pita Google Play da li je ovaj Google nalog podržao igru. Podatke o plaćanju nikad ne vidi.\n- Karijere, podešavanja i dostignuća čuvaju se samo na tvom telefonu, u privatnom prostoru aplikacije (i u rezervnoj kopiji tvog telefona, ako ti je uključena). Brisanjem aplikacije ili njenih podataka sve se briše.\n- „Kopiraj kod\" pravi tekstualni kod koji sam kopiraš. Aplikacija ga nikad nikome ne šalje.\n- Aplikacija može da koristi vibraciju telefona tokom igre. Možeš je isključiti u Opcijama.",
+"- Igra sama nigde ništa ne šalje. Nema naloga, reklama, analitike ni praćenja.\n- Karijere, podešavanja i dostignuća čuvaju se samo na tvom telefonu, u privatnom prostoru aplikacije (i u rezervnoj kopiji tvog telefona, ako ti je uključena). Brisanjem aplikacije ili njenih podataka sve se briše.\n- „Kopiraj kod\" pravi tekstualni kod koji sam kopiraš. Aplikacija ga nikad nikome ne šalje.\n- Aplikacija može da koristi vibraciju telefona tokom igre. Možeš je isključiti u Opcijama.",
 "**Deca.** Igra nije namenjena deci mlađoj od 13 godina i ni od koga svesno ne prikuplja podatke.",
 "**Izmene.** Ako se ovo ikada promeni, ova stranica biće izmenjena pre izlaska nove verzije.",
 f"**Kontakt.** {EMAIL}"])])
