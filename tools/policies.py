@@ -77,8 +77,8 @@ def page(slug, title, updated, sections, lang_note=""):
 
 EMAIL = "hello@duralek.games"
 
-# Up the Village: the policy from the game's own repo (docs/privacy.html), unchanged in substance.
-page("up-the-village", "Up the Village", "November 2026", [("en", "en", [
+# Mud, Tea and Hope (formerly Up the Village; the URL keeps the old slug because the store listings link to it): the policy from the game's own repo (docs/privacy.html), unchanged in substance.
+page("up-the-village", "Mud, Tea and Hope", "November 2026", [("en", "en", [
 "> The short version: the game does not collect, store or share any personal information about you.",
 "## What the game stores",
 "Your progress (your club, squad, money and so on) is saved on your own device so you can continue later. It never leaves your device and we cannot see it. Deleting the app deletes the save.",
@@ -141,4 +141,23 @@ page("huakai", "Huakaʻi", "November 2026", [("en", "en", [
 "If a future version changes any of this, this page will be updated first, with a new date.",
 "## Contact",
 f"Questions about this policy: {EMAIL}"])])
+# Aliʻi: Rise of a Chief: moved from leftym.github.io/aalii-privacy (effective November 2, 2026), unchanged in substance.
+page("alii", "Aliʻi: Rise of a Chief", "November 2, 2026", [("en", "en", [
+"> Aliʻi does not collect, send or share any information about you. Your game stays on your phone.",
+"## What the game stores",
+"To keep your reign going between sessions, the game saves on your device:",
+"- your saved games and your Hall of Chiefs\n- your settings, such as text size, theme and painted or drawn art",
+"This stays inside the app's own storage. It is never sent to us or anyone else. Uninstalling the app or clearing its data deletes it.",
+"## What the game does not do",
+"- It does not ask for an account, a name you must give, or an email address.\n- It has no ads, no analytics and no tracking.\n- It does not connect to the internet. The Android app does not even request internet access.\n- It does not use your location, contacts, camera, microphone or files.",
+"The chief's name you type in is part of your save and stays on your device like the rest of it.",
+"## Backups",
+"If you use the game's backup feature, it creates a file or text you choose where to keep. Android may also include the app's data in your own Google device backup, if you have that turned on. Both are under your control.",
+"## Feedback you choose to send",
+"At the end of a reign, or from Settings, you can answer three short questions for the developer (Tell the chronicler). The game then opens a message in your own mail app, or lets you copy the text. It includes your answers and a short summary of the reign (game version, age, home, score). Nothing is sent unless you tap send yourself, and the game never sees your email address.",
+"The Rate and Share buttons in Settings open your app store or your phone's share sheet. On Android, after a reign that ends well, the game may also show Google Play's own rating card (at most a few times, and Google decides when). What happens there is between you and that app; the game itself sends nothing.",
+"## Children",
+"The game is meant for players 13 and older. Because it collects nothing, it collects nothing from children either.",
+"## Changes and contact",
+f"If a future version changes any of this, this page will be updated first, with a new effective date. Questions can go to the developer at {EMAIL}."])])
 print("built")

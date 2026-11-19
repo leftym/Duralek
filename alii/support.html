@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aliʻi Support</title>
+<link rel="icon" href="../img/favicon.png">
+<style>
+@font-face{font-family:"Alegreya";font-weight:800;font-display:swap;src:url(../fonts/alegreya-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya";font-weight:700;font-display:swap;src:url(../fonts/alegreya-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(../fonts/alegreya-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(../fonts/alegreya-sans-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF}
+@font-face{font-family:"Alegreya Sans";font-weight:700;font-display:swap;src:url(../fonts/alegreya-sans-latin-700-normal.woff2) format("woff2")}
+/* Layout: one narrow reading column, like a page of the game's own help sheet. */
+:root{
+  --paper:#E4DCC8;--surface:#EDE6D5;--ink:#2B1D14;--muted:#6B5A4A;--line:rgba(43,29,20,.2);--koa:#7A4A2A;--kalo:#3E5A2B;--kalo-ink:#F1EEDF;
+  --display:"Alegreya",Georgia,"Times New Roman",serif;--body:"Alegreya Sans","Gill Sans","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1C1511;--surface:#271E18;--ink:#EDE2CC;--muted:#B4A38D;--line:rgba(237,226,204,.18);--koa:#C99467;--kalo:#93B670;--kalo-ink:#16110D;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1C1511;--surface:#271E18;--ink:#EDE2CC;--muted:#B4A38D;--line:rgba(237,226,204,.18);--koa:#C99467;--kalo:#93B670;--kalo-ink:#16110D;color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font:1.05rem/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:2.3rem;font-weight:800}
+h2{font-size:1.3rem;font-weight:700}
+p{margin:0}
+.lede{color:var(--muted);font-size:1.1rem;margin-top:6px}
+.band{height:12px;background:linear-gradient(135deg,var(--koa) 25%,transparent 25%) 0 0/12px 12px,linear-gradient(225deg,var(--koa) 25%,transparent 25%) 0 0/12px 12px;opacity:.85}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.addr{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.addr code{font:700 1.15rem var(--body);user-select:all;word-break:break-all}
+button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:8px 14px;min-height:40px;background:var(--kalo);color:var(--kalo-ink);cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--koa);outline-offset:2px}
+.s{color:var(--muted);font-size:.95rem}
+section{display:flex;flex-direction:column;gap:8px}
+dl{margin:0;display:flex;flex-direction:column;gap:14px}
+dt{font-weight:700}
+dd{margin:2px 0 0;color:var(--ink)}
+a{color:var(--kalo)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Aliʻi: Rise of a Chief</h1>
+    <p class="lede">Help and contact for the game, on iPhone and Android.</p>
+  </header>
+  <div class="band" aria-hidden="true"></div>
+
+  <section class="contact" aria-labelledby="c">
+    <h2 id="c">Contact the developer</h2>
+    <p>Questions, bug reports and ideas are all welcome. I read every message.</p>
+    <div class="addr"><code id="mail">hello@duralek.games</code><button type="button" id="copy">Copy address</button></div>
+    <p class="s" id="note">If something broke, open Settings in the game, tap Report a problem, copy the report and paste it into your email. It tells me the game version and any errors, and nothing else.</p>
+  </section>
+
+  <section aria-labelledby="q">
+    <h2 id="q">Common questions</h2>
+    <dl>
+      <div><dt>Where is my game saved?</dt><dd>On your phone, inside the app. The game saves after every season and when you close it. There are no accounts and nothing is stored online.</dd></div>
+      <div><dt>How do I move a reign to another phone?</dt><dd>In Settings, tap Back up this reign to copy your save as text, then use Load a saved game on the other phone and paste it in.</dd></div>
+      <div><dt>Does it need the internet?</dt><dd>No. Aliʻi plays fully offline, with no ads and no in-app purchases.</dd></div>
+      <div><dt>How do I start in another age?</dt><dd>Tap New reign and choose When: around 1500 (ʻUmi’s rise), 1620, or 1782 (Kamehameha’s wars).</dd></div>
+      <div><dt>The text is too small or too large.</dt><dd>Settings has a text size control, and light and dark themes.</dd></div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="p">
+    <h2 id="p">Privacy</h2>
+    <p>The game collects no data. Read the full <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+  <p class="s"><a href="../">More games from Duralek</a></p>
+</main>
+<script>
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,t=document.getElementById('mail').textContent,done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy address'},1600)};
+  var sel=function(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, copy it now'};
+  try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+});
+</script>
+
+</body>
+</html>
