@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aliʻi: Rise of a Chief release notes</title>
+<link rel="icon" href="../img/favicon.png">
+<style>
+@font-face{font-family:"Alegreya";font-weight:800;font-display:swap;src:url(../fonts/alegreya-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya";font-weight:700;font-display:swap;src:url(../fonts/alegreya-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(../fonts/alegreya-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(../fonts/alegreya-sans-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1EFF}
+@font-face{font-family:"Alegreya Sans";font-weight:700;font-display:swap;src:url(../fonts/alegreya-sans-latin-700-normal.woff2) format("woff2")}
+/* Layout: one narrow reading column, like a page of the game's own help sheet. */
+:root{
+  --paper:#E4DCC8;--surface:#EDE6D5;--ink:#2B1D14;--muted:#6B5A4A;--line:rgba(43,29,20,.2);--koa:#7A4A2A;--kalo:#3E5A2B;--kalo-ink:#F1EEDF;
+  --display:"Alegreya",Georgia,"Times New Roman",serif;--body:"Alegreya Sans","Gill Sans","Trebuchet MS",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1C1511;--surface:#271E18;--ink:#EDE2CC;--muted:#B4A38D;--line:rgba(237,226,204,.18);--koa:#C99467;--kalo:#93B670;--kalo-ink:#16110D;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1C1511;--surface:#271E18;--ink:#EDE2CC;--muted:#B4A38D;--line:rgba(237,226,204,.18);--koa:#C99467;--kalo:#93B670;--kalo-ink:#16110D;color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font:1.05rem/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:2.3rem;font-weight:800}
+h2{font-size:1.3rem;font-weight:700}
+p{margin:0}
+.lede{color:var(--muted);font-size:1.1rem;margin-top:6px}
+.band{height:12px;background:linear-gradient(135deg,var(--koa) 25%,transparent 25%) 0 0/12px 12px,linear-gradient(225deg,var(--koa) 25%,transparent 25%) 0 0/12px 12px;opacity:.85}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.addr{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.addr code{font:700 1.15rem var(--body);user-select:all;word-break:break-all}
+button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:8px 14px;min-height:40px;background:var(--kalo);color:var(--kalo-ink);cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--koa);outline-offset:2px}
+.s{color:var(--muted);font-size:.95rem}
+section{display:flex;flex-direction:column;gap:8px}
+dl{margin:0;display:flex;flex-direction:column;gap:14px}
+dt{font-weight:700}
+dd{margin:2px 0 0;color:var(--ink)}
+a{color:var(--kalo)}
+
+.rel{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:18px}
+.rel ul{margin:4px 0 0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.where{color:var(--muted);font-size:.92rem}
+.sr{margin-top:6px}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Aliʻi: Rise of a Chief release notes</h1><p class="lede">Every update, newest first.</p></header>
+<div class="band" aria-hidden="true"></div>
+<section class="rel"><h2>5.4.2 (2026-11-22)</h2>
+<p class="where">Google Play production, live 2026-11-22. App Store, live by 2026-11-23 (approval date not recorded). It replaced 5.4.1 and 5.4.0 for iPhone.</p>
+
+<ul>
+<li>The trade screens and a few building cards now show amounts in the same units as your stores.</li>
+<li>The opening title card draws smoothly, and the menu stays put after the intro.</li>
+</ul></section>
+<section class="rel"><h2>5.4.0 (2026-11-21)</h2>
+<p class="where">Google Play production, live 2026-11-22. Not on the App Store (the App Store version was withdrawn before Apple started and replaced by 5.4.2).</p>
+
+<ul>
+<li>Kōnane and Sources are now on the main menu for every player.</li>
+<li>Learn kōnane with two step-by-step lessons, then play five levels that get harder, from 4x4 to 6x6, and keep going in free play.</li>
+<li>The board and pieces are now koa wood.</li>
+<li>A tidier Rate and Share row, and a few text fixes.</li>
+</ul></section>
+<section class="rel"><h2>5.3.0 (2026-11-21)</h2>
+<p class="where">Google Play production, live 2026-11-21. Not on the App Store (iPhone went from 5.1.1 to 5.4.2).</p>
+
+<ul>
+<li>Kōnane is here. Chiefs may challenge you to a match at court, and after your first reign you can practice it from the main menu.</li>
+<li>Kahekili has his own goals, events and ending: start in 1782 in Wailuku and leave the name empty.</li>
+<li>Late in a reign a dry season, blight or rats can hit your Kalo store, with a warning first.</li>
+<li>A record of the homes you have ruled.</li>
+<li>Fixes from a playtest.</li>
+</ul></section>
+<section class="rel"><h2>5.2.0 (2026-11-21)</h2>
+<p class="where">Google Play production, live 2026-11-21. Not on the App Store.</p>
+
+<ul>
+<li>Play as ʻUmi or Kamehameha and you now get their own goals, events and ending. Start in c. 1500 in Hāmākua, or 1782 in Kohala, and leave the name empty.</li>
+<li>More chiefs are coming.</li>
+</ul></section>
+<section class="rel"><h2>5.1.1 (2026-11-20)</h2>
+<p class="where">Google Play production, live 2026-11-21. App Store, live 2026-11-22.</p>
+
+<ul>
+<li>The islands now have their real shapes, traced from map data.</li>
+<li>I checked the game's Hawaiian words, places and customs against five classic books and fixed what I got wrong, including mauka to makai.</li>
+<li>New Sources page in Settings lists the books and how the game was made.</li>
+</ul></section>
+<section class="rel"><h2>5.1.0 (2026-11-12)</h2>
+<p class="where">Google Play production (submitted 2026-11-18, live by 2026-11-20) and closed testing. App Store: not recorded. A web build was made for itch.io; the upload date is not recorded.</p>
+
+<ul>
+<li>Challenge codes: start from a named, fixed start shared as a code or on the chant card. It works fully offline.</li>
+<li>The code in the Hall is readable now, and "Share code" shares the code you loaded, not this week's.</li>
+<li>A behind-the-scenes update so the game keeps running smoothly on newer Android phones. Nothing changes in your game or your saves.</li>
+</ul></section>
+<section class="rel"><h2>5.0.7 (2026-11-12)</h2>
+<p class="where">Google Play closed testing, and the itch.io web build (2026-11-12). Play production and App Store: not recorded as a separate release.</p>
+
+<ul>
+<li>Win a reign and you can unlock new upbringings and chant-card styles. They are side steps, not stronger starts, and never sold.</li>
+<li>Clearer outcomes: forecast ranges are less gloomy where that is honest, and the end of a reign suggests what to try next.</li>
+<li>It is easier to keep your backup code after a long reign.</li>
+<li>The "Raised for war" upbringing text now matches the real numbers.</li>
+<li>More fixes from playtests, including practice battles on small phones.</li>
+</ul></section>
+<section class="rel"><h2>5.0.6 (2026-11-10)</h2>
+<p class="where">App Store, submitted 2026-11-10 (outcome not recorded). Google Play: not recorded.</p>
+
+<ul>
+<li>After a good reign the game may ask you to rate it, at a quiet moment and not often.</li>
+</ul></section>
+<section class="rel"><h2>5.0.5 (2026-11-10)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Battle screen fits small phones, and numbers show at the right scale.</li>
+<li>The attack forecast and the kahuna's dream deadline are clearer.</li>
+<li>Fixes to the guide on small screens, and to the squad panel in battle.</li>
+</ul></section>
+<section class="rel"><h2>5.0.4 (2026-11-09)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>First-session fixes: a clearer guide, better practice battle lessons, labeled resource bars, fewer overlaps and bigger tap targets.</li>
+</ul></section>
+<section class="rel"><h2>5.0.3 (2026-11-09)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Save or share your end-of-reign chant and medal as a picture.</li>
+</ul></section>
+<section class="rel"><h2>5.0.2 (2026-11-07)</h2>
+<p class="where">Google Play production, full rollout, live 2026-11-09. This was the first release on Google Play.</p>
+
+<ul>
+<li>More mauka and makai, leeward and windward in place of other direction words.</li>
+</ul></section>
+<section class="rel"><h2>5.0.1 (2026-11-07)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Mauka and makai, leeward and windward in the text.</li>
+</ul></section>
+<section class="rel"><h2>5.0 (2026-11-07)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>After a good reign the game can ask you to rate it.</li>
+</ul></section>
+<section class="rel"><h2>4.42 (2026-11-07)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>New contact address: hello@duralek.games.</li>
+</ul></section>
+<section class="rel"><h2>4.41 (2026-11-05)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Music of the reign: an original score.</li>
+</ul></section>
+<section class="rel"><h2>4.35 to 4.40 (2026-11-03)</h2>
+<p class="where">not recorded as separate releases.</p>
+
+<ul>
+<li>Six rounds of fixes from a testing panel. Details not recorded by version.</li>
+</ul></section>
+<section class="rel"><h2>4.34 (2026-11-02)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Balance and polish after a player review of 4.32.</li>
+</ul></section>
+<section class="rel"><h2>4.33.1 and 4.33 (2026-11-02)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Fixes from player and tester reviews, including a guard on the ally-plot choice after a bond has lapsed.</li>
+<li>The privacy policy is now hosted online, with a contact address for the game.</li>
+</ul></section>
+<section class="rel"><h2>4.32 (2026-11-01)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>No flash when the intro hands over to the title.</li>
+</ul></section>
+<section class="rel"><h2>4.31 (2026-10-31)</h2>
+<p class="where">not recorded.</p>
+
+<ul>
+<li>Rate and Share in Settings, and a visible guided first year.</li>
+</ul></section>
+<section class="rel"><h2>4.30 (2026-10-30)</h2>
+<p class="where">App Store, approved and live 2026-11-10. This was the first public build.</p>
+
+<ul>
+<li>A steady "Touch to begin" prompt.</li>
+<li>Animated intro with a clean hand-off to the menu.</li>
+<li>Art redone after a cultural review, and text fixes from the same review.</li>
+<li>The rising chief, golden reigns, and no more silent errors.</li>
+</ul></section>
+</main>
+</body>
+</html>
